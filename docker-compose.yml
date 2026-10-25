@@ -1,0 +1,11 @@
+services:
+  neuromorphic-sim:
+    build: .
+    volumes:
+      - .:/workspace
+      - /usr/bin:/toolchain/bin:ro
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
+    environment:
+      - PATH=/toolchain/bin:/usr/bin:/bin
