@@ -1,0 +1,6 @@
+*.vcd
+*.fst
+*.vvp
+__pycache__/
+.pytest_cache/
+sim_build/
